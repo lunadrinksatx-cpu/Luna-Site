@@ -1,0 +1,16 @@
+{
+  "name": "luna-coming-soon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Luna — coming soon page with a waitlist.",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

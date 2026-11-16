@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luna — The Anti-Energy Drink. Coming soon.</title>
+  <meta name="description" content="Luna is a caffeine-free bedtime drink made with magnesium, L-theanine, and chamomile. Join the waitlist.">
+  <meta name="theme-color" content="#0F1235">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luna — The Anti-Energy Drink">
+  <meta property="og:description" content="Unwind the Mind, Reset the Clock. A caffeine-free bedtime drink. Join the waitlist.">
+  <meta property="og:image" content="/assets/luna-og.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" href="/assets/luna-icon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="hero">
+      <img class="logo" src="/assets/luna-logo-stacked.png" width="604" height="573"
+           alt="Luna — The Anti-Energy Drink">
+
+      <p class="label">Coming soon</p>
+
+      <h1>Unwind the Mind, <em>Reset the Clock.</em></h1>
+
+      <p class="lede">
+        A caffeine-free bedtime drink made with magnesium, L-theanine, and chamomile.
+        Made for the hours after the noise.
+      </p>
+
+      <form id="waitlist" class="waitlist" novalidate>
+        <div class="field">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email"
+                 placeholder="Your email" required maxlength="254" aria-describedby="form-note">
+          <!-- Honeypot: hidden from people, tempting to bots. -->
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit">Join the waitlist</button>
+        </div>
+        <p id="form-note" class="note" role="status" aria-live="polite">
+          One note when Luna is ready. Nothing else.
+        </p>
+      </form>
+
+      <div id="thanks" class="thanks" hidden tabindex="-1">
+        <p class="thanks-title">You’re on the list.</p>
+        <p class="thanks-body">We’ll write when Luna is ready. Until then, put the day down.</p>
+      </div>
+    </section>
+
+    <section class="inside" aria-labelledby="inside-title">
+      <p class="label" id="inside-title">What’s inside</p>
+      <h2>Three ingredients, one quiet job.</h2>
+
+      <ul class="ingredients">
+        <li>
+          <h3>Magnesium</h3>
+          <p>A mineral already found in relaxation and bedtime products.</p>
+        </li>
+        <li>
+          <h3>L-Theanine</h3>
+          <p>An amino acid found in tea leaves and used in calming drinks.</p>
+        </li>
+        <li>
+          <h3>Chamomile</h3>
+          <p>The classic bedtime herb, without the kettle and the wait.</p>
+        </li>
+      </ul>
+
+      <ul class="pills" aria-label="Product details">
+        <li>Caffeine-free</li>
+        <li>0 sugar</li>
+        <li>Natural ingredients</li>
+      </ul>
+
+      <p class="plan">Powder packets first. Cans to follow.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="closing"><em>Night is the point.</em></p>
+    <p class="fine">
+      Luna makes no medical claims. Not intended to diagnose, treat, cure, or prevent any disease.
+    </p>
+    <p class="fine">© 2026 Luna · A student-created brand · Mentor Expo 2026</p>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
